@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#dig{
+    text-align: center;
+}
+body{
+    background: #51c2f2;
+}
+.pas{
+    border-radius: 5px;
+    
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(246, 176, 176);
+    transition: .3s;
+    border: 2px solid black;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+.photodiv img{
+    height: 200px;
+    width: 200px;
+    animation: toph 1s infinite;
+    z-index:2;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+div.photodiv span{
+    font-size: 20px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    top: -50px;
+    margin-left: -150px;
+    z-index: 4;
+}
+
+div.rectangle{
+    background-color: red;
+    height: 200px;
+    width: 600px;
+    margin: 30px 0px 0px 30px;
+    position: absolute;
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(-10px);
+    }
+
+    95%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes toph{
+    0%{
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0.3;
+    }
+    95%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /*universal selector*/
+        *{
+            font-family: 'TIMES NEW ROMAN';
+            Times,serif;
+            /*text-align:left;*/
+        }
+        h1{
+            background-color: blueviolet;
+            color: aqua;
+            text-align: center;
+            /* border-width:5px;
+            border-style:solid;
+            */
+            border:5px solid blue;
+        }
+        
+        .title{
+            background-color: blanchedalmond;
+            color:aquamarine;
+            text-align: center;
+            text-shadow: 3px 3px 15px rgb(red, green, blue);
+            border-top: 5px dashed red;
+            border-bottom: 4px solid purple ;
+        }
+        /*important is used to show that exact things/*
+        /*first one shows horizontal
+        second show vertical
+        last one show the blurness!!!
+    
+        
+        #demo{
+            background-color:brown;
+            color:aqua;
+            text-align: center;
+            border-bottom: 5px solid red;
+            border-top: 5px dashed yellowgreen;
+            border-top: 4px solid purple ;
+            border-left: 4px solid grey;
+
+
+        }*/
+
+        /*grouping selector*/
+        .title,#demo{
+            text-transform: uppercase;
+            /*color: blueviolet;*/
+        }
+    </style>
+</head>
+<body>
+<h1>this is element selector</h1>
+<h2 class="title">this is class selector </h2>
+<h3 id="demo"> this is id selector</h3>
+</body>
+</html>
